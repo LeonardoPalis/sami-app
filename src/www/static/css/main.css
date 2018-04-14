@@ -1,0 +1,314 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0px;
+}
+
+.a-menu-item {
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: 'clipregular';
+    src: url('./clip-webfont.eot');
+    src: url('./fonts/clip-webfont.eot?#iefix') format('embedded-opentype'), url('./fonts/clip-webfont.woff2') format('woff2'), url('./fonts/clip-webfont.woff') format('woff'), url('./fonts/clip-webfont.ttf') format('truetype'), url('./fonts/clip-webfont.svg#clipregular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+.appbar {
+  font-family: 'clipregular', Arial, sans-serif;
+  font-size: 27px;
+  text-shadow: 2px 2px 8px #70dfea;
+  /*color: rgb(147, 232, 247);
+  fill: rgb(147, 232, 247);*/
+}
+
+.appbar-custom-name {
+  font-size: 18px;
+}
+
+.refresh {
+  position: fixed !important;
+  top: 50% !important;
+  left: 41% !important;
+  transform: translate3d(10px, 10px, 0px) !important;
+}
+
+.home-icon {
+  display: block !important;
+  margin: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  font-size: 45px !important;
+  margin-top: 10px !important;
+}
+
+.card-animation {
+  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 5s; /* Chrome, Safari, Opera */
+  -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+  animation-name: example;
+  animation-duration: 0.1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+/*
+ * BEGIN
+ * Tour card transition animation
+ * Chrome, Safari, Opera
+ */
+@-webkit-keyframes example {
+  25%   {margin:0px auto auto}
+  50%   {margin:5px auto auto}
+  75%   {margin:0px auto auto}
+  100%  {margin:5px auto auto}
+}
+
+@keyframes example {
+  25%   {margin:0px auto auto}
+  50%   {margin:5px auto auto}
+  75%   {margin:0px auto auto}
+  100%  {margin:5px auto auto}
+}
+
+/*
+ * END
+ */
+
+.header-subtitle {
+  color: white;
+  font-size: 21px;
+  margin-left: 0px;
+  display: inline;
+}
+
+.small-icon span {
+  font-size: 20px !important;
+}
+
+.zoom-controls {
+  position: fixed;
+  top: 430px;
+  left: 20px;
+  z-index: 30;
+}
+
+#map-canvas {
+ position: absolute;
+ margin-top:14px;
+ margin-bottom:60px;
+ overflow: auto;
+ background-color: transparent;
+ z-index: 30;
+}
+
+#c_map {
+ position: absolute;
+ margin-top:36px;
+ margin-bottom:60px;
+ overflow: auto;
+}
+
+#c_map_draw_layer {
+ position: absolute;
+ margin-top:36px;
+ background-color: transparent;
+ z-index: 10;
+ margin-bottom:60px;
+ overflow: auto;
+}
+
+#c_map_arrow_layer {
+ position: absolute;
+ margin-top:36px;
+ background-color: transparent;
+ z-index: 10;
+ margin-bottom:60px;
+ overflow: auto;
+}
+
+#gps-arrow{
+  position:absolute;
+  z-index: 20;
+  margin-top:60px;
+  behavior:url(-ms-transform.htc);
+  /* Firefox */
+  -moz-transform:rotate(45deg);
+  /* Safari and Chrome */
+  -webkit-transform:rotate(45deg);
+  /* Opera */
+  -o-transform:rotate(45deg);
+
+}
+
+#map-container{
+  position: absolute;
+  background: transparent;
+  color: transparent;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.where-i-am {
+  position: absolute !important;
+  left: 2px;
+  top: 5%;
+}
+
+*
+{
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+input
+{
+-webkit-user-select: auto !important;
+-khtml-user-select: auto !important;
+-moz-user-select: auto !important;
+-ms-user-select: auto !important;
+user-select: auto !important;
+}
+
+.interest-popup img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-right: 7px;
+}
+
+.interest-popup-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.870588);
+  font-family: Roboto, sans-serif;
+  vertical-align: top
+}
+
+.interest-popup-actions {
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+  vertical-align: middle;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.interest-popup-nearby {
+  position: relative;
+  letter-spacing: 0px;
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(255, 64, 129) !important;
+  text-decoration: none;
+  vertical-align: 13px;
+}
+
+.nearby-ads-popup .leaflet-popup-tip-container {
+  width: 0px !important;
+}
+
+.leaflet-marker-pane > * {
+  -webkit-transition: transform .5s linear;
+  -moz-transition: transform .5s linear;
+  -o-transition: transform .5s linear;
+  -ms-transition: transform .5s linear;
+  transition: transform .5s linear;
+}
+
+.menu-item {
+  position: absolute;
+  top: 12px;
+  left: 46px;
+}
+
+@media screen and (min-width: 600px){
+  .MuiGrid-grid-sm-6-4164398011 {
+     max-width: 100% !important;
+     flex-basis: 100% !important;
+   }
+}
+
+@media screen and (min-width: 768px) {
+
+  body{
+    margin-top: 2%;
+  }
+
+  .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+    zoom: 1.6;
+  }
+
+  .places-list{
+    zoom: 1.25;
+  }
+
+  .MuiToolbar-gutters-344431791 {
+    zoom: 1.25;
+  }
+
+  .a-menu-item{
+    zoom: 1.25;
+  }
+
+  .MuiCardMedia-root-140605214 {
+      height: 100%;
+  }
+
+}
+
+a {
+  text-decoration: none !important;
+}
+
+*::-webkit-input-placeholder {
+  color: white;
+}
+
+.filterTextBlack:before {
+    background-color: black !important;
+}
+
+.filterTextBlack:after {
+    background-color: black !important;
+}
+
+.filterTextWhite:before {
+    background-color: white !important;
+}
+
+.filterTextWhite:after {
+    background-color: white !important;
+}
+
+@media screen and (orientation:portrait) {
+  .responsive-callback-error{
+    margin-top: calc(50% - 50px);
+  }
+}
+
+@media screen and (orientation:landscape) {
+  .responsive-callback-error{
+    margin-top: calc(13% - 50px);
+  }
+
+  .MuiGrid-grid-sm-6-4164398011 {
+     max-width: 50% !important;
+     flex-basis: 50% !important;
+   }
+}
